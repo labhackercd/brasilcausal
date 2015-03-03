@@ -1,0 +1,6 @@
+config = {
+    'database': './database.sqlite',
+    'api_key': 'SEEKR_API_KEY',
+    'api_secret': 'SEEKR_API_SECRET',
+    'search_id': 20070,
+}
