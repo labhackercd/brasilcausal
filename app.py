@@ -35,7 +35,7 @@ def index(db):
 
         # Get list of search terms and respective number of occurrences
         cur.execute(
-            ("SELECT search_term, COUNT(*) AS count FROM entry WHERE tags= "
+            ("SELECT search_term, COUNT(*) AS count FROM entry WHERE tags=? "
              "AND published_on BETWEEN ? AND ? GROUP BY search_term ORDER BY count DESC"),
             (row[0], date, date + datetime.timedelta(days=1)))
 
